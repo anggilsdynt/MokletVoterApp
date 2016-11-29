@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "635381604386",
+    "firebase_url": "https://mokletvoterapp-22914.firebaseio.com",
+    "project_id": "mokletvoterapp-22914",
+    "storage_bucket": "mokletvoterapp-22914.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635381604386:android:437665a74a627a9d",
+        "android_client_info": {
+          "package_name": "id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635381604386-4kdb4lkge215tndmg1uj7oi14tnn5qq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkc3fcU83P8kgGuMj25U3-Db4Y70oEfEs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
