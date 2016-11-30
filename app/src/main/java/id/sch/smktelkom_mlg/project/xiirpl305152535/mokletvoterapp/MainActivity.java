@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.support.v7.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -34,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = new Intent(this, IntroActivity.class);
+        startActivity(intent);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -95,9 +96,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view == textViewSignIn) {
 
         }
-        Intent intent = new Intent(this, IntroActivity.class);
-        startActivity(intent);
-
     }
-
 }
