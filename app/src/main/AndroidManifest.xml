@@ -18,6 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".IntroActivity" />
+        <activity android:name=".MenuAdminActivity" />
+        <activity android:name=".PeriodeTahunActivity"></activity>
     </application>
 
 </manifest>
