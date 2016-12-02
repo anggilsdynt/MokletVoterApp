@@ -42,8 +42,7 @@ public class DetailSiswaActivity extends AppCompatActivity implements SiswaAdapt
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                goAdd();
             }
         });
 
@@ -55,6 +54,11 @@ public class DetailSiswaActivity extends AppCompatActivity implements SiswaAdapt
 
         fillData();
 
+    }
+
+    private void goAdd()
+    {
+        startActivityForResult(new Intent(this,InputSiswaActivity.class), REQUEST_CODE_ADD);
     }
 
     private void fillData()
@@ -108,6 +112,20 @@ public class DetailSiswaActivity extends AppCompatActivity implements SiswaAdapt
 
     @Override
     public void doShare(int pos) {
+
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == REQUEST_CODE_ADD && resultCode == RESULT_OK)
+        {
+            Siswa siswa = (Siswa) data.getSerializableExtra(SISWA);
+            mList.add(siswa);
+            mAdapter.notifyDataSetChanged();
+        }
+
 
     }
 }

@@ -27,7 +27,8 @@
         <activity
             android:name=".DetaillSiswaActivity"
             android:label="@string/title_activity_detaill_siswa"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".InputSiswaActivity"></activity>
     </application>
 
 </manifest>
