@@ -106,6 +106,21 @@ public class DetailSiswaActivity extends AppCompatActivity implements SiswaAdapt
 
     @Override
     public void doDelete(int pos) {
+        itemPos = pos;
+        final Siswa siswa = mList.get(pos);
+        mList.remove(itemPos);
+        if (isFiltered) mListAll.remove(mListMapFilter.get(itemPos).intValue());
+        mAdapter.notifyDataSetChanged();
+        Snackbar.make(findViewById(R.id.fab),siswa.judul+" Terhapus",Snackbar.LENGTH_LONG)
+                .setAction("UNDO", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mList.add(itemPos, siswa);
+                        if (isFiltered) mListAll.add(mListMapFilter.get(itemPos), siswa);
+                        mAdapter.notifyDataSetChanged();
+                    }
+                })
+                .show();
 
     }
 
