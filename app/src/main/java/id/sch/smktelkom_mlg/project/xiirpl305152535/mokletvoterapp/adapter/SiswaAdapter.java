@@ -70,8 +70,6 @@ public class SiswaAdapter extends RecyclerView.Adapter<SiswaAdapter.ViewHolder>
         TextView tvDeskripsi;
         Button bEdit;
         Button bDelete;
-        ImageButton ibFav;
-        ImageButton ibShare;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -102,19 +100,6 @@ public class SiswaAdapter extends RecyclerView.Adapter<SiswaAdapter.ViewHolder>
                 }
             });
 
-            ibFav.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    mISiswaAdapter.doFav(getAdapterPosition());
-                }
-            });
-
-            ibShare.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    mISiswaAdapter.doShare(getAdapterPosition());
-                }
-            });
 
         }
 

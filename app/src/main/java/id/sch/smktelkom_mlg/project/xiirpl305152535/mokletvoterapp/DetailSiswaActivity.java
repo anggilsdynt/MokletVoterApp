@@ -97,6 +97,10 @@ public class DetailSiswaActivity extends AppCompatActivity implements SiswaAdapt
 
     @Override
     public void doEdit(int pos) {
+        itemPos = pos;
+        Intent intent = new Intent(this, InputSiswaActivity.class);
+        intent.putExtra(SISWA, mList.get(pos));
+        startActivityForResult(intent, REQUEST_CODE_EDIT);
 
     }
 
@@ -123,9 +127,19 @@ public class DetailSiswaActivity extends AppCompatActivity implements SiswaAdapt
         {
             Siswa siswa = (Siswa) data.getSerializableExtra(SISWA);
             mList.add(siswa);
-            mAdapter.notifyDataSetChanged();
+            if(isFiltered ) mListAll.add(siswa);
+            //doFilter(mQuery);
+            //mAdapter.notifyDataSetChanged();
         }
 
-
+        else if (requestCode == REQUEST_CODE_EDIT && resultCode == RESULT_OK)
+        {
+            Siswa siswa = (Siswa) data.getSerializableExtra(SISWA);
+            mList.remove(itemPos);
+            if(isFiltered) mListAll.remove(mListMapFilter.get(itemPos).intValue());
+            mList.add(itemPos,siswa);
+            if (isFiltered) mListAll.add(mListMapFilter.get(itemPos), siswa);
+            mAdapter.notifyDataSetChanged();
+        }
     }
 }
