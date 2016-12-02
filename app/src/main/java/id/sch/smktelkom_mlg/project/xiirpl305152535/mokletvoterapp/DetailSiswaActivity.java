@@ -7,10 +7,14 @@ import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -89,6 +93,64 @@ public class DetailSiswaActivity extends AppCompatActivity implements SiswaAdapt
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_detaill_siswa, menu);
+
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView)
+                MenuItemCompat.getActionView(searchItem);
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                mQuery = newText.toLowerCase();
+                doFilter(mQuery);
+                return true;
+            }
+        });
+        return true;
+    }
+
+    private void doFilter(String query)
+    {
+        if(!isFiltered)
+        {
+            mListAll.clear();
+            mListAll.addAll(mList);
+            isFiltered = true;
+        }
+
+        mList.clear();
+        if(query == null || query.isEmpty())
+        {
+            mList.addAll(mListAll);
+            isFiltered = false;
+        }
+
+        else {
+            mListMapFilter.clear();
+            for (int i = 0; i < mListAll.size(); i++)
+            {
+                Siswa siswa = mListAll.get(i);
+                if (siswa.judul.toLowerCase().contains(query) ||
+                        siswa.deskripsi.toLowerCase().contains(query) ||
+                        siswa.lokasi.toLowerCase().contains(query))
+                {
+                    mList.add(siswa);
+                    mListMapFilter.add(i);
+                }
+            }
+        }
+        mAdapter.notifyDataSetChanged();
+    }
+
+    @Override
     public void doClick(int pos) {
         Intent intent = new Intent(this, DetaillSiswaActivity.class);
         intent.putExtra(SISWA,mList.get(pos));
@@ -143,7 +205,7 @@ public class DetailSiswaActivity extends AppCompatActivity implements SiswaAdapt
             Siswa siswa = (Siswa) data.getSerializableExtra(SISWA);
             mList.add(siswa);
             if(isFiltered ) mListAll.add(siswa);
-            //doFilter(mQuery);
+            doFilter(mQuery);
             //mAdapter.notifyDataSetChanged();
         }
 
