@@ -1,5 +1,6 @@
-package id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp;
+package id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
@@ -7,11 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
-import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.adapter.PeriodeAdapter;
-import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.model.Periode;
+import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.R;
+import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha.adapter.PeriodeAdapter;
+import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha.model.Periode;
 
 public class PeriodeTahunActivity extends AppCompatActivity {
 
@@ -30,6 +33,13 @@ public class PeriodeTahunActivity extends AppCompatActivity {
         recyclerView.setAdapter(mAdapter);
 
         fillData();
+
+        findViewById(R.id.imageViewPeriode).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PeriodeTahunActivity.this, DetailSiswaActivity.class));
+            }
+        });
     }
 
     private void fillData()

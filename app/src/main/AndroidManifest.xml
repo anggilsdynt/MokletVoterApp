@@ -18,17 +18,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".IntroActivity" />
-        <activity android:name=".MenuAdminActivity" />
-        <activity android:name=".PeriodeTahunActivity" />
+        <activity android:name=".pasha.MenuAdminActivity" />
+        <activity android:name=".pasha.PeriodeTahunActivity" />
         <activity
-            android:name=".DetailSiswaActivity"
+            android:name=".pasha.DetailSiswaActivity"
             android:label="@string/title_activity_detail_siswa"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".DetaillSiswaActivity"
+            android:name=".pasha.DetaillSiswaActivity"
             android:label="@string/title_activity_detaill_siswa"
             android:theme="@style/AppTheme" />
-        <activity android:name=".InputSiswaActivity"></activity>
+        <activity android:name=".pasha.InputSiswaActivity"></activity>
     </application>
 
 </manifest>

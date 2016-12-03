@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp;
+package id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -19,8 +19,9 @@ import android.view.View;
 
 import java.util.ArrayList;
 
-import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.adapter.SiswaAdapter;
-import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.model.Siswa;
+import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.R;
+import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha.adapter.SiswaAdapter;
+import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha.model.Siswa;
 
 public class DetailSiswaActivity extends AppCompatActivity implements SiswaAdapter.ISiswaAdapter{
 

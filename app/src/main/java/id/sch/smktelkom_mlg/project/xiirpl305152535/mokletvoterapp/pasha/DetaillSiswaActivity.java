@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp;
+package id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,7 +10,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.model.Siswa;
+import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.R;
+import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha.model.Siswa;
 
 public class DetaillSiswaActivity extends AppCompatActivity {
 

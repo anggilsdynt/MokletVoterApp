@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.adapter;
+package id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.R;
-import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.model.Periode;
+import id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha.model.Periode;
 
 /**
  * Created by Pasha Anisa on 11/30/2016.

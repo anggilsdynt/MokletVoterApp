@@ -1,4 +1,4 @@
-package id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.model;
+package id.sch.smktelkom_mlg.project.xiirpl305152535.mokletvoterapp.pasha.model;
 
 import android.graphics.drawable.Drawable;
 
