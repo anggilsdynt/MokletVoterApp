@@ -1,6 +1,6 @@
 # Moklet Voter App
 
-###Penjelasan Aplikasi
+<h2>Penjelasan Aplikasi</h2>
 Aplikasi ini dibuat sebagai wadah untuk siswa-siswa SMK Telkom Malang untuk pemilihan Ketua OSIS. Siswa dapat menggunakan aplikasi ini saat ada pemilihan Ketua OSIS.
 Siswa dapat memilih kandidat pilihannya, saat pemilihan siswa hanya dapat memilih satu kali.
 
