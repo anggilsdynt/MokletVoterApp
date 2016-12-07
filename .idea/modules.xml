@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MokletVoterApp.iml" filepath="$PROJECT_DIR$/MokletVoterApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MokletVoterApps.iml" filepath="$PROJECT_DIR$/MokletVoterApps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

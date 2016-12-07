@@ -17,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".IntroActivity" />
         <activity android:name=".pasha.MenuAdminActivity" />
         <activity android:name=".pasha.PeriodeTahunActivity" />
@@ -30,6 +30,10 @@
             android:label="@string/title_activity_detaill_siswa"
             android:theme="@style/AppTheme" />
         <activity android:name=".pasha.InputSiswaActivity" />
+        <activity
+            android:name=".Kandidat"
+            android:label="@string/title_activity_kandidat"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
