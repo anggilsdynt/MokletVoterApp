@@ -15,8 +15,7 @@ public class IntroActivity extends AppIntro {
         super.onCreate(savedInstanceState);
         addSlide(SampleSlide.newInstance(R.layout.slide_1));
         addSlide(SampleSlide.newInstance(R.layout.slide_2));
-        addSlide(SampleSlide.newInstance(R.layout.slide_3));
-        //addSlide(AppIntroFragment.newInstance("Slide Title", "Testtttt", R.mipmap.ic_launcher, g));
+        //addSlide(AppIntroFragment.newInstance("Slide Title", "Testtttt", R.drawable.vote,));
 
         setZoomAnimation();
     }
