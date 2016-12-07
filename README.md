@@ -4,18 +4,30 @@
 Aplikasi ini dibuat sebagai wadah untuk siswa-siswa SMK Telkom Malang untuk pemilihan Ketua OSIS. Siswa dapat menggunakan aplikasi ini saat ada pemilihan Ketua OSIS.
 Siswa dapat memilih kandidat pilihannya, saat pemilihan siswa hanya dapat memilih satu kali.
 
-###Screenshoot Aplikasi
+<h2>Screenshoot Aplikasi<h2>
 
-###Video Aplikasi
+<h3>User Registraation</h3>
 
-###Link File Apk
+![Screenshot_2016-12-07-19-30-01.jpg](https://docs.google.com/uc?id=0B0CFHk2H9RL8MmtsbDhsNW1fWGM)
 
-###Identitas Kelompok
+![Screenshot_2016-12-07-19-31-01.jpg](https://docs.google.com/uc?id=0B0CFHk2H9RL8UTZkS21Jd3lKMEk)
 
-1. Anggi Lisdayanti, XIIRPL3, 05, 4289 1187.063, anggilsdynt, SMK Telkom Malang
+<h3>Log Out</h3>
 
-2. Fadil Ghulam Pratama, XIIRPL3, 15, 4342/1240.070, fadilnoob, SMK Telkom Malang
+![Screenshot_2016-12-07-19-31-07.jpg](https://docs.google.com/uc?id=0B0CFHk2H9RL8WE91dndqX2VSWm8)
 
-3. Pasha Anisa Herdwiyanti Ramadhani, XIIRPL3, 25, 4243.1308.070, pashaneesa, SMK Telkom Malang
+<h2>Video Aplikasi<h2>
 
-4. Vegaz Suba'ir, XIIRPL3, 35, VegaZvarri, SMK Telkom Malang
+
+<h2>Link File APK<h2>
+(https://docs.google.com/uc?id=0B0CFHk2H9RL8d2RIeGh6OXQtbE0)
+
+<h2>Idetitas Kelompok<h2>
+
+1. Anggi Lisdayanti / XIIRPL3 / 05 / 4289 1187.063 / anggilsdynt / SMK Telkom Malang
+
+2. Fadil Ghulam Pratama / XIIRPL3 / 15 /4342/1240.070 /fadilnoob /SMK Telkom Malang
+
+3. Pasha Anisa Herdwiyanti Ramadhani / XIIRPL3 / 25 / 4243.1308.070 / pashaneesa / SMK Telkom Malang
+
+4. Vegaz Suba'ir / XIIRPL3 / 35 / VegaZvarri / SMK Telkom Malang
