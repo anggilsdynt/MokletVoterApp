@@ -42,4 +42,4 @@ Siswa dapat memilih kandidat pilihannya, saat pemilihan siswa hanya dapat memili
 
 3. Pasha Anisa Herdwiyanti Ramadhani / XIIRPL3 / 25 / 4243.1308.070 / pashaneesa / SMK Telkom Malang
 
-4. Vegaz Suba'ir / XIIRPL3 / 35 / VegaZvarri / SMK Telkom Malang
+4. Vegaz Suba'ir / XIIRPL3 / 35/ 4456/1354.070 / VegaZvarri / SMK Telkom Malang
